@@ -13,10 +13,55 @@
 }
 
 body {
+  background-color: var(--littlelemon-grey);
   font-family: "Karla", sans-serif;
   margin: 0;
   padding: 0;
 }
+
+nav, section {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid var(--littlelemon-grey);
+  height: 90px;
+}
+
+section {
+  padding: 1em;
+}
+
+.logo {
+  max-height: 60px;
+  margin: 1em;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a, .menu a:visited {
+  display: flex;
+  color: var(--littlelemon-darkgrey);
+  padding: 0 1em;
+  align-items: center;
+  height: 100%;
+}
+
+.menu a:hover {
+  background-color: var(--littlelemon-yellow);
+  text-decoration: underline;
+  color: var(--littlelemon-darkgrey);
+  height: 100%;
+}
+
+
 
 h1,h2,h3 {
   font-family: "Markazi Text", sans-serif;

@@ -1,7 +1,9 @@
 const Login = () => {
     return (
         <main>
-            <h1>Login</h1>
+            <section>
+                <h1>Login</h1>
+            </section>
         </main>
     )
 }

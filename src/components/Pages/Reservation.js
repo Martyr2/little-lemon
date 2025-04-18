@@ -1,7 +1,9 @@
 const Reservation = () => {
     return (
         <main>
-            <h1>Reservation</h1>
+            <section>
+                <h1>Reservation</h1>    
+            </section>
         </main>
     )
 }
