@@ -1,7 +1,7 @@
 const Confirmation = () => {
     return (
         <main>
-            <section>
+            <section className="main-body">
                 <h1>Confirmation</h1>
             </section>
         </main>

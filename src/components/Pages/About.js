@@ -7,7 +7,7 @@ const About = () => {
             <HeroImage image={pasta}>
                 <h1 className="shaded-heading">About</h1>
             </HeroImage>
-            <section>
+            <section className="main-body">
                 <p>This is the about page</p>
             </section>
         </main>

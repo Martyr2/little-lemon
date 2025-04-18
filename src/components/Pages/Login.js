@@ -1,7 +1,7 @@
 const Login = () => {
     return (
         <main>
-            <section>
+            <section className="main-body">
                 <h1>Login</h1>
             </section>
         </main>
