@@ -45,6 +45,7 @@ main {
 }
 
 section {
+  width: 100%;
   padding: 1em;
 }
 
@@ -58,8 +59,9 @@ section {
 }
 
 .home-image {
-  min-width: 40%;
+  min-width: 32%;
   padding: 0 1em;
+  text-align: right;
 }
 
 .home-heading {
@@ -68,6 +70,12 @@ section {
 
 .home-heading h1, .home-heading h2 {
   line-height: .9;
+}
+
+.home-dish {
+  min-width: 290px;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -167,6 +175,14 @@ select, input, textarea {
 
 
 /** Cards **/
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  margin: 1.5em 0;
+  place-items: center;
+}
+
 .card-container {
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -191,7 +207,7 @@ select, input, textarea {
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -200,11 +216,13 @@ select, input, textarea {
   font-size: 0.9rem;
   color: var(--littlelemon-darkgrey);
   margin-bottom: 16px;
+  min-height: 90px;
 }
 
 .card-button {
   padding: 8px 16px;
   font-size: 1rem;
+  font-weight: bold;
   border: none;
   background-color: var(--littlelemon-yellow);
   color: var(--littlelemon-darkgrey);
