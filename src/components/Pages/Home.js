@@ -6,6 +6,10 @@ import seafood from "../../assets/seafood-lunch.png";
 import Card from "../Card/Card";
 
 const Home = () => {
+    const buttonClickHandler = () => {
+        window.location.href = "/menu";
+    }
+
     return (
         <main>
             <section className="home-container">
@@ -30,24 +34,28 @@ const Home = () => {
                         title="Delicous Bruchetta"    
                         description="Enjoy the delicious fresh taste of our bruchetta! Made with only ripe tomatoes and our family's olive oil from Italy, you can't go wrong with this dish."
                         buttonText="Visit our menu"
+                        onButtonClick={buttonClickHandler}
                     />
                     <Card 
                         imageSrc={greek}
                         title="Greek Salad"    
                         description="A refreshing salad made with fresh tomatoes, cucumbers, peppers, onions, olives, and feta cheese. This salad is perfect for any time of the day."
                         buttonText="Visit our menu"
+                        onButtonClick={buttonClickHandler}
                     />
                     <Card 
                         imageSrc={pasta}
                         title="Penne Marinara"    
                         description="All of our pasta is made in house. This classic penne is to die for and we are sure you will love it."
                         buttonText="Visit our menu"
+                        onButtonClick={buttonClickHandler}
                     />
                     <Card 
                         imageSrc={seafood}
                         title="Seafood Spaghetti"    
                         description="Any seafood lovers out there? This is the perfect dish for you! Our seafood is fresh and cooked to perfection."
                         buttonText="Visit our menu"
+                        onButtonClick={buttonClickHandler}
                     />
                 </div>
             </section>
