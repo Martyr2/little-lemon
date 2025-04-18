@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <main>
             <HeroImage image={pasta}>
-                <h1>Menu</h1>
+                <h1 className="shaded-heading">Menu</h1>
             </HeroImage>
             <section>
                 <p>This is the menu page</p>

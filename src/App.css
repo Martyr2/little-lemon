@@ -98,6 +98,14 @@ select, input, textarea {
   color: var(--littlelemon-darkgrey);
 }
 
+.shaded-heading {
+  background-color: rgba(51, 51, 51, .7);
+  color: white;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0 30px;
+}
+
 .rounded {
   border-radius: .2rem;
 }

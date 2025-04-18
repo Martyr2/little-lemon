@@ -5,7 +5,7 @@ const Reservation = () => {
     return (
         <main>
             <HeroImage image={pasta}>
-                <h1>Reservations</h1>
+                <h1 className="shaded-heading">Reservations</h1>
             </HeroImage>
             <section>
                 <p>This is the reservations page</p>

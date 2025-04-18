@@ -5,7 +5,7 @@ const About = () => {
     return (
         <main>
             <HeroImage image={pasta}>
-                <h1>About</h1>
+                <h1 className="shaded-heading">About</h1>
             </HeroImage>
             <section>
                 <p>This is the about page</p>
