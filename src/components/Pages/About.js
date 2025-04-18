@@ -1,8 +1,14 @@
+import HeroImage from "../HeroImage/HeroImage";
+import pasta from "../../assets/pasta-plate.jpg";
+
 const About = () => {
     return (
         <main>
-            <section>
+            <HeroImage image={pasta}>
                 <h1>About</h1>
+            </HeroImage>
+            <section>
+                <p>This is the about page</p>
             </section>
         </main>
     )

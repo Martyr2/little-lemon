@@ -1,8 +1,14 @@
+import HeroImage from "../HeroImage/HeroImage";
+import pasta from "../../assets/pasta-plate.jpg";
+
 const Order = () => {
     return (
         <main>
+            <HeroImage image={pasta}>
+                <h1>Order Online</h1>
+            </HeroImage>
             <section>
-                <h1>Order</h1>
+                <p>This is the order online page</p>
             </section>
         </main>
     )

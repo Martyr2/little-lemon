@@ -1,8 +1,14 @@
+import HeroImage from "../HeroImage/HeroImage";
+import pasta from "../../assets/pasta-plate.jpg";
+
 const Reservation = () => {
     return (
         <main>
+            <HeroImage image={pasta}>
+                <h1>Reservations</h1>
+            </HeroImage>
             <section>
-                <h1>Reservation</h1>    
+                <p>This is the reservations page</p>
             </section>
         </main>
     )
