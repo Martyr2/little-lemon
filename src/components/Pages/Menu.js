@@ -4,6 +4,8 @@ import pasta from "../../assets/pasta-sm.jpg";
 import greek from "../../assets/greek-salad-sm.jpg";
 import bruchetta from "../../assets/bruchetta-sm.jpg";
 import seafood from "../../assets/seafood-lunch.png";
+import salmon from "../../assets/salmon.jpg";
+import alfredo from "../../assets/alfredo.jpg";
 
 import MenuItem from "../MenuItem/MenuItem";
 
@@ -24,7 +26,7 @@ const Menu = () => {
         {
             image: greek,
             title: 'Greek Salad',
-            description: 'This favorite is a delicious house made pasta dish that features tomatoes from our italian farm.',
+            description: 'Crisp and fresh, our greek salad is the perfect starter for any meal.',
             price: '13.50'
         },
         {
@@ -34,16 +36,16 @@ const Menu = () => {
             price: '29.99'
         },
         {
-            image: pasta,
-            title: 'Penne Marinara',
-            description: 'This favorite is a delicious house made pasta dish that features tomatoes from our italian farm.',
-            price: '19.99'
+            image: salmon,
+            title: 'Fresh Salmon',
+            description: 'Nothing compares to the fresh taste of our salmon. It\'s the perfect dish for any time of year.',
+            price: '23.99'
         },
         {
-            image: pasta,
-            title: 'Penne Marinara',
-            description: 'This favorite is a delicious house made pasta dish that features tomatoes from our italian farm.',
-            price: '19.99'
+            image: alfredo,
+            title: 'Parmasean Alfredo',
+            description: 'Creamy and delicious, our alfredo is to die for. We import all of our ingredients from Italy.',
+            price: '31.49'
         },
     ];
 
