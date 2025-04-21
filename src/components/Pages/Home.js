@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="main-body">
-                <h3>OUR HIGHLIGHTS</h3>
+                <h3>HIGHLIGHTS</h3>
 
                 <div className="card-list">
                     <Card 
@@ -66,6 +66,11 @@ const Home = () => {
 
             <section className="testimonial-container">
                 <h3>TESTIMONIALS</h3>
+                <p>"The food was amazing and the service was great! I can't wait to come back!"</p>
+            </section>
+
+            <section className="about-container">
+                <h3>ABOUT</h3>
                 <p>"The food was amazing and the service was great! I can't wait to come back!"</p>
             </section>
         </main>
