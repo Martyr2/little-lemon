@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'stretch' }}>
                 <Link to="/"><img src={logo} alt="Little Lemon Home" className="logo"/></Link>
                 <img className="burger-icon" onClick={handleClick} src={isOpen ? closeIcon : openIcon} alt="Navigation Bar"/>
                 <div className="menu">
