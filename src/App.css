@@ -29,8 +29,15 @@ nav {
   align-items: stretch;
   border-bottom: 1px solid var(--littlelemon-grey);
   display: flex;
-  height: 90px;
   justify-content: space-between;
+}
+
+.burger-icon {
+  display: none;
+  max-width: 48px;
+  max-height: 48px;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 main {
@@ -73,7 +80,7 @@ section {
 }
 
 .home-dish {
-  min-width: 290px;
+  min-width: 190px;
   max-width: 100%;
   height: auto;
 }
@@ -99,6 +106,22 @@ section {
   background-color: var(--littlelemon-yellow);
   color: var(--littlelemon-darkgrey);
   height: 100%;
+  text-decoration: underline;
+}
+
+.menu-mobile {
+  width: 100%;
+}
+
+.menu-mobile a, .menu-mobile a:visited {
+  display: block;
+  text-align: center;
+  padding: 1em;
+}
+
+.menu-mobile a:hover {
+  background-color: var(--littlelemon-yellow);
+  color: var(--littlelemon-darkgrey);
   text-decoration: underline;
 }
 
@@ -275,7 +298,6 @@ select, input, textarea {
 
 .login-title {
   text-align: center;
-  /* font-size: 1.5rem; */
   margin-bottom: 1.5rem;
 }
 
@@ -321,7 +343,6 @@ select, input, textarea {
   color: white;
   background-color: var(--littlelemon-green);
 }
-
 /** End Login Page **/
 
 
@@ -387,6 +408,35 @@ select, input, textarea {
 }
 /** End Cards **/
 
+/** Testimonial Card **/
+.testimonial-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  border: var(--littlelemon-grey) solid 1px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.testimonial-title {
+  font-size: 1.66rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.testimonial-text {
+  font-size: 0.9rem;
+  color: var(--littlelemon-darkgrey);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+/** End Testimonial Card **/
+
 
 .footer-container {
   background-color: var(--littlelemon-green);
@@ -395,7 +445,8 @@ select, input, textarea {
 
 .footer-nav {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /**grid-template-columns: repeat(4, 1fr);**/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
   padding: 1em;
 }
@@ -426,4 +477,22 @@ select, input, textarea {
 .footer-logo {
   max-width: 100px;
   width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .home-image {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+  }
 }

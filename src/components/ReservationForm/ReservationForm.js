@@ -18,9 +18,8 @@ const ReservationForm = (props) => {
 
   function handleDateChange(e) {
     setDate(e.target.value);
-
-    var stringify = e.target.value;
-    const date = new Date(stringify);
+    
+    const date = new Date(e.target.value);
 
     props.updateTimes(date);
 
@@ -118,11 +117,7 @@ const ReservationForm = (props) => {
 
       <div>
         <label htmlFor="occasion">Occasion</label> <br></br>
-        <select
-          id="occasion"
-          value={occasion}
-          onChange={(e) => setOccasion(e.target.value)}
-        >
+        <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
           <option>None</option>
           <option>Birthday</option>
           <option>Anniversary</option>
@@ -133,11 +128,7 @@ const ReservationForm = (props) => {
 
       <div>
         <label htmlFor="preferences">Seating preferences</label> <br></br>
-        <select
-          id="preferences"
-          value={preferences}
-          onChange={(e) => setPreferences(e.target.value)}
-        >
+        <select id="preferences" value={preferences} onChange={(e) => setPreferences(e.target.value)}>
           <option>None</option>
           <option>Indoors</option>
           <option>Outdoor (Patio)</option>

@@ -1,17 +1,17 @@
+import { Link } from "react-router";
+import Card from "../Card/Card";
+import Testimonial from "../Testimonial/Testimonial";
+
+// Image assets
 import homesplash from "../../assets/home-splash.png";
 import greek from "../../assets/greek-salad-sm.jpg";
 import bruchetta from "../../assets/bruchetta-sm.jpg";
 import pasta from "../../assets/pasta-sm.jpg";
 import seafood from "../../assets/seafood-lunch.png";
-import Card from "../Card/Card";
 
 const Home = () => {
     const cardButtonClickHandler = () => {
         window.location.href = "/menu";
-    }
-
-    const ctaClickHandler = () => {
-        window.location.href = "/reservations";
     }
 
     return (
@@ -23,7 +23,7 @@ const Home = () => {
                     
                     <p>We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist.</p>
 
-                    <button className="btn-primary" onClick={ctaClickHandler}>Reserve a Table</button>
+                    <Link to="/reservations"><button className="btn-primary">Reserve a Table</button></Link>
                 </div>
                 <div className="home-image">
                     <img src={homesplash} alt="Little Lemon Home" className="home-dish"/>
@@ -66,12 +66,17 @@ const Home = () => {
 
             <section className="testimonial-container">
                 <h3>TESTIMONIALS</h3>
-                <p>"The food was amazing and the service was great! I can't wait to come back!"</p>
+                <Testimonial title="John Doe" text="The food was amazing and the service was great! I can't wait to come back!"/>
             </section>
 
             <section className="about-container">
                 <h3>ABOUT</h3>
-                <p>"The food was amazing and the service was great! I can't wait to come back!"</p>
+                <div className="about-image-container">
+                    <div className="about-image-text">
+                        <p>From the humble kitchen of Little Lemon, to the bustling streets of Chicago, our story is a tale of passion, tradition, and the art of crafting delicious dishes that transport you to a culinary paradise. Founded in 2004 by our visionary owner, Chef John Doe, Little Lemon has been a beacon of culinary excellence for generations. With an excellent staff and a commitment to quality ingredients, Little Lemon has earned a reputation as a destination for food enthusiasts who seek authentic Mediterranean flavors.</p>
+                        <p>Try our menu today and indulge in a culinary experience that will leave you craving for more! We are sure you are going to love it.</p>
+                    </div>
+                </div>
             </section>
         </main>
     )

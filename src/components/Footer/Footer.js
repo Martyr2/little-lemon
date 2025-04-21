@@ -25,14 +25,14 @@ const Footer = () => {
 
                         <p>(629)-555-5555</p>
 
-                        <p>info@littlelemon.com</p>
+                        <p><a href="mailto:info@littlelemon.com">info@littlelemon.com</a></p>
                     </div>
                     <div className="footer-column">
                         <h3>Social Media</h3>
                         <ul>
-                            <li>Instagram</li>
-                            <li>Facebook</li>
-                            <li>Join Us</li>
+                            <li><a href="https://www.instagram.com/Littlelemonmi/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/p/Little-Lemon-100091290265246/">Facebook</a></li>
+                            <li><Link to="/">Join Us</Link></li>
                         </ul>
                     </div>
                 </div>
