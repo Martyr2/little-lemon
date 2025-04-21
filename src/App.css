@@ -158,7 +158,7 @@ select, input, textarea {
   padding: 0.5rem 1.5rem;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary a:visited {
   border: solid 1px var(--littlelemon-yellow);
   background-color: var(--littlelemon-yellow);
 }
@@ -239,7 +239,7 @@ select, input, textarea {
 .menu-item-price {
   font-size: 1rem;
   font-weight: bold;
-  color: #2ecc71;
+  color: var(--littlelemon-green);
 }
 
 .menu-item-description {
@@ -247,9 +247,82 @@ select, input, textarea {
   color: #666;
   margin: 0;
 }
-
-
 /** End Menu Page **/
+
+/** Login Page **/
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  min-width: 400px;
+  
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  text-align: center;
+  /* font-size: 1.5rem; */
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--littlelemon-yellow);
+}
+
+.login-button {
+  width: 100%;
+  background-color: var(--littlelemon-yellow);
+  color: var(--littlelemon-darkgrey);
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  color: white;
+  background-color: var(--littlelemon-green);
+}
+
+/** End Login Page **/
 
 
 /** Cards **/

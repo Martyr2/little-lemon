@@ -1,8 +1,12 @@
+import LoginControl from "../Login/LoginControl";
+
 const Login = () => {
     return (
         <main>
             <section className="main-body">
-                <h1>Login</h1>
+                <div className="login-body">
+                    <LoginControl />
+                </div>
             </section>
         </main>
     )
