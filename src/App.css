@@ -354,6 +354,29 @@ section {
 }
 /** End Login Page **/
 
+/** Confirmation Page **/
+
+.confirmation-container {
+  background-color: var(--littlelemon-lightgrey);
+  border-radius: .2rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.confirmation-buttons a {
+  margin: 0 .5rem;
+}
+
+/** End Confirmation Page **/
+
 
 /** Cards **/
 .card-list {
