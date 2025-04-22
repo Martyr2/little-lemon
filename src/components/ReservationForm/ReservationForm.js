@@ -13,7 +13,7 @@ const ReservationForm = (props) => {
   const [comments, setComments] = useState("");
 
   const [reservationTime, setReservationTime] = useState(
-    props.availableTimes.map((times) => <option>{times}</option>)
+    props.availableTimes.map((times, index) => <option key={index}>{times}</option>)
   );
 
   function handleDateChange(e) {
@@ -23,7 +23,7 @@ const ReservationForm = (props) => {
 
     props.updateTimes(date);
 
-    setReservationTime(props.availableTimes.map((times) => <option>{times}</option>));
+    setReservationTime(props.availableTimes.map((times, index) => <option key={index}>{times}</option>));
   }
 
   return (
