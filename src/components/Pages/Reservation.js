@@ -1,14 +1,25 @@
 import HeroImage from "../HeroImage/HeroImage";
 import ReservationForm from "../ReservationForm/ReservationForm";
 import { useReducer } from "react";
-import { fetchAPI } from "../../api/bookingAPI";
+import { fetchAPI, submitAPI } from "../../api/bookingAPI";
+import { useNavigate } from "react-router";
 
 // Image assets
 import reservations from "../../assets/reservations.jpg";
 
 const Reservation = () => {
+    const navigate = useNavigate();
+
     function updateTimes(date) {
         return fetchAPI(date);
+    }
+
+    function submitForm(formData) {
+        const response = submitAPI(formData);
+
+        if (response === true) {
+            navigate("/confirmation");
+        }
     }
     
     // Initialize times
@@ -23,7 +34,7 @@ const Reservation = () => {
 
             <section className="main-body">
                 <h2>Reserve a Table</h2>
-                <ReservationForm availableTimes={availableTimes} updateTimes={dispatch}/>
+                <ReservationForm availableTimes={availableTimes} updateTimes={dispatch} submitForm={submitForm}/>
             </section>
         </main>
     )

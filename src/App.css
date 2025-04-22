@@ -54,6 +54,12 @@ select, input, textarea {
   padding: .8rem 1rem;
 }
 
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
 nav, section {
   background-color: white;
   margin: 0 auto;
@@ -377,6 +383,26 @@ section {
 
 /** End Confirmation Page **/
 
+/** Reservation Page **/
+
+.reservation-form {
+  max-width: 50%;
+  margin: 2em auto;
+}
+.reservation-form div.input-group {
+  margin: 0 1em 1.25em 0;
+  width: 100%;
+}
+
+.reservation-form input, .reservation-form select, .reservation-form textarea {
+  width: 100%;
+}
+
+.reservation-form div.input-row {
+  display: flex;
+}
+/** End Reservation Page **/
+
 
 /** Cards **/
 .card-list {
@@ -525,5 +551,9 @@ section {
 
   nav {
     flex-direction: column;
+  }
+
+  .reservation-form {
+    max-width: 100%;
   }
 }
