@@ -1,6 +1,8 @@
 import HeroImage from "../HeroImage/HeroImage";
-import reservations from "../../assets/reservations.jpg";
 import ReservationForm from "../ReservationForm/ReservationForm";
+
+// Image assets
+import reservations from "../../assets/reservations.jpg";
 
 const Reservation = () => {
     const times = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];

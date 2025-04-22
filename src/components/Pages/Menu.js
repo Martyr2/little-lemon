@@ -1,4 +1,7 @@
 import HeroImage from "../HeroImage/HeroImage";
+import MenuItem from "../MenuItem/MenuItem";
+
+// Image assets
 import pork from "../../assets/pork-chop.jpg";
 import pasta from "../../assets/pasta-sm.jpg";
 import greek from "../../assets/greek-salad-sm.jpg";
@@ -7,9 +10,8 @@ import seafood from "../../assets/seafood-lunch.png";
 import salmon from "../../assets/salmon.jpg";
 import alfredo from "../../assets/alfredo.jpg";
 
-import MenuItem from "../MenuItem/MenuItem";
-
 const Menu = () => {
+    // Could come in off an API call.
     const menu = [
         {
             image: bruchetta,
@@ -54,6 +56,7 @@ const Menu = () => {
             <HeroImage image={pork}>
                 <h1 className="shaded-heading">Menu</h1>
             </HeroImage>
+
             <section className="main-body">
                 <h2>OUR MENU</h2>
                 <div className="main-menu-container">

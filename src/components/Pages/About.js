@@ -1,4 +1,6 @@
 import HeroImage from "../HeroImage/HeroImage";
+
+// Image assets
 import pasta from "../../assets/pasta-plate.jpg";
 import grill from "../../assets/grill-sm.jpg";
 
@@ -8,6 +10,7 @@ const About = () => {
             <HeroImage image={pasta}>
                 <h1 className="shaded-heading">About</h1>
             </HeroImage>
+            
             <section className="main-body">
                 <h2>OUR STORY</h2>
                 <div className="about-image-container">
@@ -17,7 +20,6 @@ const About = () => {
                         <p>Try our menu today and indulge in a culinary experience that will leave you craving for more! We are sure you are going to love it.</p>
                     </div>
                 </div>
-
             </section>
         </main>
     )

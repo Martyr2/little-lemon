@@ -1,7 +1,4 @@
-
-
 const Testimonial = (props) => {
-    
     return (
         <div className="testimonial-card">
             <div className="testimonial-content">

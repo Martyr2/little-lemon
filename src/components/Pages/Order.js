@@ -1,6 +1,8 @@
-import HeroImage from "../HeroImage/HeroImage";
-import wings from "../../assets/wings-flatbread.jpg";
 import { Link } from "react-router";
+import HeroImage from "../HeroImage/HeroImage";
+
+// Image assets
+import wings from "../../assets/wings-flatbread.jpg";
 
 const Order = () => {
     const styles = {
