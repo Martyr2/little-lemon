@@ -54,6 +54,11 @@ select, input, textarea {
   padding: .8rem 1rem;
 }
 
+select:focus, input:focus, textarea:focus {
+  border-color: var(--littlelemon-yellow);
+  outline: none;
+}
+
 label {
   display: block;
   font-weight: bold;
@@ -206,6 +211,12 @@ section {
 
 .btn-secondary {
   background-color: var(--littlelemon-grey);
+}
+
+.error-message {
+  color: red;
+  display: block;
+  padding: .5em 0;
 }
 
 
