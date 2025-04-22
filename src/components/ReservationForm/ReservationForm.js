@@ -165,7 +165,7 @@ const ReservationForm = (props) => {
         </div>
       </div>
 
-      <div>
+      <div style={{ textAlign: "center" }}>
         <small>
           <p>
             Note: You cannot edit your reservation after submission. Please

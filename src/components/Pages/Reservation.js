@@ -10,10 +10,12 @@ import reservations from "../../assets/reservations.jpg";
 const Reservation = () => {
     const navigate = useNavigate();
 
+    // Update times based on date
     function updateTimes(date) {
         return fetchAPI(date);
     }
 
+    // ReservationForm submits through this.
     function submitForm(formData) {
         const response = submitAPI(formData);
 

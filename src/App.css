@@ -47,7 +47,7 @@ a, a:visited {
 
 select, input, textarea {
   border: 1px solid var(--littlelemon-grey);
-  border-radius: .2rem;
+  border-radius: .25rem;
   color: var(--littlelemon-darkgrey);
   font-family: "Karla", sans-serif;
   font-size: 1rem;
@@ -329,7 +329,6 @@ section {
 
 .form-group input {
   border: 1px solid #ccc;
-  border-radius: 8px;
   font-size: 1rem;
   outline: none;
   padding: 0.5rem 0.75rem;
@@ -360,8 +359,8 @@ section {
 }
 /** End Login Page **/
 
-/** Confirmation Page **/
 
+/** Confirmation Page **/
 .confirmation-container {
   background-color: var(--littlelemon-lightgrey);
   border-radius: .2rem;
@@ -383,18 +382,24 @@ section {
 
 /** End Confirmation Page **/
 
-/** Reservation Page **/
 
+/** Reservation Page **/
 .reservation-form {
-  max-width: 50%;
   margin: 2em auto;
+  max-width: 50%;
 }
 .reservation-form div.input-group {
   margin: 0 1em 1.25em 0;
   width: 100%;
 }
 
+.reservation-form input:focus {
+  border-color: var(--littlelemon-yellow);
+  outline: none;
+}
+
 .reservation-form input, .reservation-form select, .reservation-form textarea {
+  transition: border-color 0.2s ease;
   width: 100%;
 }
 
