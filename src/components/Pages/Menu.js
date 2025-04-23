@@ -68,7 +68,7 @@ const Menu = () => {
                 </div>
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default Menu;

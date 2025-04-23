@@ -23,7 +23,7 @@ const Confirmation = () => {
                 </div>
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default Confirmation;

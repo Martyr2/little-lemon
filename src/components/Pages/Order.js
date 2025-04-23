@@ -7,7 +7,7 @@ import wings from "../../assets/wings-flatbread.jpg";
 const Order = () => {
     const styles = {
         textAlign: 'center'
-    }
+    };
 
     return (
         <main>
@@ -23,7 +23,7 @@ const Order = () => {
                 </div>
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default Order;

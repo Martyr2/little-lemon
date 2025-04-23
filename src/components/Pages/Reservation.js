@@ -39,7 +39,7 @@ const Reservation = () => {
                 <ReservationForm availableTimes={availableTimes} updateTimes={dispatch} submitForm={submitForm}/>
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default Reservation;

@@ -98,7 +98,7 @@ const ReservationForm = (props) => {
       ...prev,
       [field]: "",
     }));
-  }
+  };
 
   return (
     <form className="reservation-form">
@@ -262,6 +262,6 @@ const ReservationForm = (props) => {
       </div>
     </form>
   );
-}
+};
 
 export default ReservationForm;

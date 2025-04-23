@@ -1,4 +1,6 @@
 import { Link } from "react-router";
+
+// Image assets
 import footerLogo from "../../assets/footer-logo.png";
 
 const Footer = () => {
@@ -38,7 +40,7 @@ const Footer = () => {
                 </div>
             </section>
         </footer>
-    )
-}
+    );
+};
 
 export default Footer;

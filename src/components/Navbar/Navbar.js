@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router";
+
+// Image assets
 import logo from "../../assets/little-lemon-logo-sm.jpg";
 
 const Navbar = () => {
@@ -9,7 +11,7 @@ const Navbar = () => {
 
     const handleClick = () => {
         setIsOpen(!isOpen);
-    }
+    };
 
     return (
         <nav>
@@ -36,7 +38,7 @@ const Navbar = () => {
                 <Link to="/login">Login</Link>
             </div>}
         </nav>
-    )
-}
+    );
+};
 
 export default Navbar;

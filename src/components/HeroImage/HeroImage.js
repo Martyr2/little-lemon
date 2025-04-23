@@ -13,7 +13,6 @@ const HeroImage = ({image, height="300px", children }) => {
     };
     
     return <section style={divStyle}>{children}</section>;
-
-}
+};
 
 export default HeroImage;

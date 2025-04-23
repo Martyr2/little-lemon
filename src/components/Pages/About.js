@@ -22,7 +22,7 @@ const About = () => {
                 </div>
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default About;

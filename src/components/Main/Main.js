@@ -8,7 +8,7 @@ import Order from "../Pages/Order";
 import Login from "../Pages/Login";
 import Confirmation from "../Pages/Confirmation";
 
-const Main = function () {
+const Main = () => {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
@@ -20,6 +20,6 @@ const Main = function () {
       <Route path="/confirmation" element={<Confirmation />} />
     </Routes>
   );
-}
+};
 
 export default Main;

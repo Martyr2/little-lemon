@@ -9,7 +9,7 @@ const Login = () => {
                 </div>
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default Login;
