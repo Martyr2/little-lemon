@@ -19,7 +19,7 @@ const Order = () => {
                 <div style={styles}>
                     <p>Thank you for your interested in ordering online. We currently do not accept online orders, but will starting in the Fall. We look forward to serving you!</p>
 
-                    <Link to="/reservations"><button className="btn-primary">Reserve a Table</button></Link>
+                    <Link to="/reservations"><button className="btn-primary" aria-label="Reserve a table at Little Lemon">Reserve a Table</button></Link>
                 </div>
             </section>
         </main>

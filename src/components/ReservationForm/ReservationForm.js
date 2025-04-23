@@ -104,7 +104,7 @@ const ReservationForm = (props) => {
     <form className="reservation-form">
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">First Name<sup className="required">*</sup></label>
           <input
             type="text"
             id="firstName"
@@ -119,7 +119,7 @@ const ReservationForm = (props) => {
         </div>
 
         <div className="input-group">
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastName">Last Name<sup className="required">*</sup></label>
           <input
             type="text"
             id="lastName"
@@ -135,7 +135,7 @@ const ReservationForm = (props) => {
 
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email<sup className="required">*</sup></label>
           <input
             type="email"
             id="email"
@@ -152,7 +152,7 @@ const ReservationForm = (props) => {
 
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="phonenum">Phone Number</label>
+          <label htmlFor="phonenum">Phone Number<sup className="required">*</sup></label>
           <input
             type="tel"
             id="phonenum"
@@ -169,7 +169,7 @@ const ReservationForm = (props) => {
 
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="people">Number of People</label>
+          <label htmlFor="people">Number of People<sup className="required">*</sup></label>
           <input
             type="number"
             id="people"
@@ -186,7 +186,7 @@ const ReservationForm = (props) => {
 
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="date">Select Date</label>
+          <label htmlFor="date">Select Date<sup className="required">*</sup></label>
           <input
             type="date"
             id="date"
@@ -200,7 +200,7 @@ const ReservationForm = (props) => {
 
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="time">Select Time</label>
+          <label htmlFor="time">Select Time<sup className="required">*</sup></label>
           <select id="time" required>
             {reservationTime}
           </select>
@@ -236,7 +236,7 @@ const ReservationForm = (props) => {
 
       <div className="input-row">
         <div className="input-group">
-          <label htmlFor="comments">Additional Comments</label>
+          <label htmlFor="comments">Additional Comments<sup className="required">*</sup></label>
           <textarea
             id="comments"
             rows={8}
@@ -256,7 +256,7 @@ const ReservationForm = (props) => {
             double-check your answer before submitting your reservation request.
           </p>
         </small>
-        <button className="btn-primary" onClick={handleSubmit}>
+        <button className="btn-primary" onClick={handleSubmit} aria-label="Book your table reservation">
           Book Table
         </button>
       </div>

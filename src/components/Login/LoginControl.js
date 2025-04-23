@@ -32,7 +32,7 @@ const LoginControl = () => {
             required 
           />
         </div>
-        <button type="submit" className="login-button">Log In</button>
+        <button type="submit" className="login-button" aria-label="Sign in to Little Lemon">Log In</button>
       </form>
     </div>
   );

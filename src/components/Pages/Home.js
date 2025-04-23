@@ -12,7 +12,7 @@ import seafood from "../../assets/seafood-lunch.png";
 const Home = () => {
     const cardButtonClickHandler = () => {
         window.location.href = "/menu";
-    }
+    };
 
     return (
         <main>
@@ -23,7 +23,7 @@ const Home = () => {
                     
                     <p>We are a family owned Mediterranean restaurant, located on Maldove Street in Chicago, Illionis. We focus on traditional recipes served with a modern twist.</p>
 
-                    <Link to="/reservations"><button className="btn-primary">Reserve a Table</button></Link>
+                    <Link to="/reservations"><button className="btn-primary" aria-label="Reserve a Table at Little Lemon">Reserve a Table</button></Link>
                 </div>
                 <div className="home-image">
                     <img src={homesplash} alt="Little Lemon Home" className="home-dish"/>
