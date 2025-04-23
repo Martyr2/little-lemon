@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from "react-router";
 import Reservation from './components/Pages/Reservation';
 
-test('Renders the Reservation heading', () => {
+test('Renders the booking table button on reservation page', () => {
   render(
     <MemoryRouter>
       <Reservation />
