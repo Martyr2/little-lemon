@@ -21,7 +21,7 @@ To give you a better idea of how the site looks, you can check out our images be
 
 <p align="center">
     <h3>Mobile</h3>
-    <img alt="Little Lemon" src="./public/little-lemon-mobile-screenshot.jpg" style="width: 350px;"/>
+    <img alt="Little Lemon" src="./public/little-lemon-mobile-screenshot.jpg" style="width: 300px;"/>
 </p>
 
 ## Questions?
